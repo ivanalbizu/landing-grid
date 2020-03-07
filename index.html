@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es" class="no-js">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Description" content="Author: Iván González Albizu, Landing CSS Display GRID tests">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="theme-color" content="#0a526e">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="easings.js"></script>
+  <script src="script.js"></script>
+  <title>Landing Css Grid</title>
+  <script>document.documentElement.className = 'js';</script>
+</head>
+<body>
+
+  <header>
+    <div class="site-header">
+      <button class="btn btn-ham" aria-label="Open the menu">
+        <svg class="ham hamRotate" viewBox="0 0 100 100" width="80" aria-hidden="true">
+          <path
+                class="line top"
+                d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+          <path
+                class="line middle"
+                d="m 30,50 h 40" />
+          <path
+                class="line bottom"
+                d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+        </svg>
+      </button>
+      <h1 class="title-site"><a class="logo" href="#company">company</a></h1>
+    </div>
+    <nav class="menu">
+      <ul class="menu__wrap">
+        <li class="menu__item"><a class="menu__link" href="#who">who</a></li>
+        <li class="menu__item"><a class="menu__link" href="#what">what</a></li>
+        <li class="menu__item"><a class="menu__link" href="#where">where</a></li>
+        <li class="menu__item"><a class="menu__link" href="#when">when</a></li>
+        <li class="menu__item"><a class="menu__link" href="#why">why</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="main scrollscreen">
+
+    <section class="container-video" id="company">
+      <video class="video" width="1920" height="1080" autoplay muted loop>
+        <source src="video/yellow.mp4" type="video/mp4" />
+        <source src="video/yello.webm" type="video/webm" />
+      </video>
+      <div class="slides">
+        <div class="slide slide--01 slide--active">
+          <a data-split-word href="#who">Who we are</a>
+        </div>
+        <div class="slide slide--02">
+          <a data-split-word href="#what">What we do</a>
+        </div>
+        <div class="slide slide--03">
+          <a data-split-word href="#where">Where we are</a>
+        </div>
+        <div class="slide slide--04">
+          <a data-split-word href="#when">When we talk</a>
+        </div>
+        <div class="slide slide--05">
+          <a data-split-word href="#why">why we do it</a>
+        </div>
+      </div>
+      <div class="nav">
+        <button class="nav__control" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="js-navigation js-prev" style="display: none;" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button class="nav__control" type="button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="js-navigation js-next" width="45" height="45" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+    </section>
+
+    <div class="header-section" id="who">
+      <h2 class="title-section">Who section</h2>
+      <h3 class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla</h3>
+    </div>
+    <div class="container-img" style="background-image: url(img/kayak.jpg);"></div>
+    <section class="container-grid container-grid--schema-1">
+      <article class="div1 txt txt--right">
+        <h4 class="title-box">Título de la caja principal</h4>
+        <p class="txt-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla inventore quasi accusamus, obcaecati impedit natus nisi est, voluptatibus aliquid porro exercitationem maxime modi, sequi distinctio at? Totam!</p>
+      </article>
+      <div class="div2 bg" style="background-image: url(img/underwater.jpg);"></div>
+      <div class="div3 bg" style="background-image: url(img/marigold.jpg);"></div>
+      <article class="div4 txt txt--scnd txt--sticky-top">
+        <h4 class="title-box">Título</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+      <article class="div5 txt txt--scnd txt--sticky-bottom">
+        <h4 class="title-box">Titulo</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+      <div class="div6 bg" style="background-image: url(img/kingfisher.jpg);"></div>
+    </section>
+
+    <div class="header-section" id="what">
+      <h2 class="title-section">What section</h2>
+      <h3 class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla</h3>
+    </div>
+    <div class="container-img" style="background-image: url(img/tourism.jpg);"></div>
+    <section class="container-grid container-grid--schema-2">
+      <div class="div1 bg" style="background-image: url(img/tulip.jpg);"></div>
+      <article class="div2 txt txt--scnd txt--sticky-top">
+        <h4 class="title-box">Título</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+      <article class="div3 txt txt--scnd txt--sticky-bottom">
+        <h4 class="title-box">Titulo</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+      <div class="div4 bg" style="background-image: url(img/kingfisher.jpg);"></div>
+      <div class="div5 bg" style="background-image: url(img/aquarium.jpg);"></div>
+      <article class="div6 txt txt--left">
+        <h4 class="title-box">Título de la caja principal</h4>
+        <p class="txt-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla inventore quasi accusamus, obcaecati impedit natus nisi est, voluptatibus aliquid porro exercitationem maxime modi, sequi distinctio at? Totam!</p>
+      </article>
+    </section>
+
+    <div class="header-section" id="where">
+      <h2 class="title-section">Where section</h2>
+      <h3 class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla</h3>
+    </div>
+    <div class="container-img" style="background-image: url(img/globe.jpg);"></div>
+    <section class="container-grid container-grid--schema-3">
+      <article class="div1 txt txt--right bg-black">
+        <h4 class="title-box">Título de la caja principal</h4>
+        <p class="txt-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla inventore quasi accusamus, obcaecati impedit natus nisi est, voluptatibus aliquid porro exercitationem maxime modi, sequi distinctio at? Totam!</p>
+      </article>
+      <div class="div2 bg" style="background-image: url(img/physalis.jpg);"></div>
+      <article class="div3 txt txt--scnd txt--sticky-top">
+        <h4 class="title-box">Título</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+      <div class="div4 bg" style="background-image: url(img/photographer.jpg);"></div>
+      <div class="div5 bg" style="background-image: url(img/shoes.jpg);"></div>
+      <article class="div6 txt txt--scnd txt--sticky-bottom">
+        <h4 class="title-box">Titulo</h4>
+        <h5 class="txt-box">Subtítulo, breve descripción con Heading 3</h5>
+      </article>
+    </section>
+
+    <div class="header-section" id="when">
+      <h2 class="title-section">When section</h2>
+      <h3 class="subtitle-section">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla</h3>
+    </div>
+    <section class="container-grid container-grid--schema-4">
+      <div class="div1 bg" style="background-image: url(img/tulip.jpg);"></div>
+      <div class="div2 bg" style="background-image: url(img/underwater.jpg);"></div>
+      <div class="div3 bg" style="background-image: url(img/sea.jpg);"></div>
+      <article class="div4 txt txt--sticky-top txt--sticky-bottom">
+        <h4 class="title-box">Título de la caja principal</h4>
+        <p class="txt-box">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea explicabo laboriosam nulla inventore quasi accusamus, obcaecati impedit natus nisi est, voluptatibus aliquid porro exercitationem maxime modi, sequi distinctio at? Totam!</p>
+      </article>
+    </section>
+
+    <footer class="footer" id="why">
+      <p>Animación de menú basada en Recurso <a href="https://tympanus.net/codrops/2017/10/17/dynamic-shape-overlays-with-svg/">Codrops</a></p>
+      <p>Customización de <a href="https://codepen.io/ram1286/pen/REyxrM">Scrollbar</a></p>
+    </footer>
+  </main>
+
+  <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+    <path class="shape-overlays__path"></path>
+    <path class="shape-overlays__path"></path>
+  </svg>
+
+</body>
+</html>
