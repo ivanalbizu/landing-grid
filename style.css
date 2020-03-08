@@ -595,8 +595,14 @@ h1, h2, h3, h4, h5, h6 {
 
 .video {
   display: flex;
-  height: auto;
   margin-bottom: 50px;
+}
+
+@media (min-width: 1920px) {
+  .video {
+    width: 100%;
+    height: auto;
+  }
 }
 
 @media (max-width: 575px) {
@@ -631,7 +637,7 @@ h1, h2, h3, h4, h5, h6 {
 .title-site {
   font-family: 'Roboto Mono', monospace;
   font-weight: 300;
-  font-size: 3vmin;
+  font-size: 1.5em;
   writing-mode: vertical-lr;
   text-orientation: upright;
   line-height: 50px;
@@ -768,7 +774,6 @@ h1, h2, h3, h4, h5, h6 {
 
 .custom-scroll .scrollscreen--track {
   width: 17px;
-  min-width: 2.2vmin;
   background: #d8d8d8;
 }
 
