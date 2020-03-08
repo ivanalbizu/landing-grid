@@ -431,6 +431,17 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.5em;
   }
 }
+.title-footer {
+  text-align: center;
+  margin: .5em auto;
+  a, a:hover, a:visited {
+    color: $blue;
+    text-decoration: underline;
+  }
+  @media (max-width: 767.98px) {
+    font-size: 1em;
+  }
+}
 .txt-box {
   font-size: .95em;
   font-weight: 300;

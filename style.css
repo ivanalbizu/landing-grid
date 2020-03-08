@@ -697,6 +697,22 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+.title-footer {
+  text-align: center;
+  margin: .5em auto;
+}
+
+.title-footer a, .title-footer a:hover, .title-footer a:visited {
+  color: #0a526e;
+  text-decoration: underline;
+}
+
+@media (max-width: 767.98px) {
+  .title-footer {
+    font-size: 1em;
+  }
+}
+
 .txt-box {
   font-size: .95em;
   font-weight: 300;
